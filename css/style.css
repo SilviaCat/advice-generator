@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Manrope", sans-serif;
+  background-color: var(--DarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 440px;
+  background-color: var(--DarkGrayishBlue);
+  position: relative;
+  text-align: center;
+  border-radius: 10px;
+  padding: 50px;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.btn-dice {
+  cursor: pointer;
+  position: absolute;
+  bottom: -32px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--NeonGreen);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: block;
+  transition: all 300ms ease-in-out;
+  left: calc(50% - 32px);
+}
+
+.btn-dice:hover {
+  background-color: var(--NeonGreen);
+  box-shadow: 0px 0px 35px 0px var(--NeonGreen);
+}
+
+#id-advice {
+  color: var(--NeonGreen);
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+
+#quote {
+  color: var(--LightCyan);
+  font-size: 28px;
+  margin: 0;
+}
+
+.div-img {
+  display: inline-block;
+  margin: 40px 0 32px 0;
+}
