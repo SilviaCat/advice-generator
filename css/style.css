@@ -68,4 +68,5 @@ body {
 .div-img {
   display: inline-block;
   margin: 40px 0 32px 0;
+  width: 100%;
 }
